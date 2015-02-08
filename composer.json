@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "tez/yii2-cms": "*",
+        "tez/yii2-cms": "*"
     },  
     "autoload": {
         "psr-4": {
