@@ -1,22 +1,16 @@
 <?php
 
-namespace cms;
+namespace blog\backend;
 
 class Module extends \yii\base\Module
 {
-	public $controllerNamespace = 'cms\controllers';
+	public $controllerNamespace = 'blog\backend\controllers';
 
     /**
      * @var int
      * @desc Remember Me Time (seconds), default = 2592000 (30 days)
      */
     public $rememberMeTime = 2592000; // 30 days
-
-	/**
-	 * @var int
-	 * @desc Records per page
-	 */
-	public $recordsPerPage = 25; // 30 days
 
     public $pageTemplates = [
         [
@@ -31,12 +25,12 @@ class Module extends \yii\base\Module
 	{
 		parent::init();
 
-		\Yii::$app->getI18n()->translations['core.*'] = [
+		\Yii::$app->getI18n()->translations['blog.*'] = [
 			'class' => 'yii\i18n\PhpMessageSource',
 			'basePath' => __DIR__.'/messages',
 		];
 		$this->setAliases([
-			'@cms' => __DIR__
+			'@blog' => __DIR__
 		]);
     }
 }

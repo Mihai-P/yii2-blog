@@ -25,5 +25,8 @@
         "psr-4": {
             "blog\\": ""
         }
+    },
+    "extra": {
+        "bootstrap":"blog\\BlogBootstrap"
     }
 }
