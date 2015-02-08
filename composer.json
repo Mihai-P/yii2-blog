@@ -1,0 +1,29 @@
+{
+    "name": "tez/yii2-blog",
+    "description": "Yii 2 Small CMS Module",
+    "keywords": ["yii2", "blog"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/Mihai-P/yii2-blog/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "source": "https://github.com/Mihai-P/yii2-blog"
+    },
+    "authors": [
+        {
+            "name": "Mihai-P",
+            "email": "mihai@2ezweb.com.au",
+            "homepage": "http://2ezweb.com.au",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "tez/yii2-cms": "*",
+    },  
+    "autoload": {
+        "psr-4": {
+            "blog\\": ""
+        }
+    }
+}
